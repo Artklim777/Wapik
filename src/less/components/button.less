@@ -1,0 +1,154 @@
+@button-color: #fff;
+@button-background: #40c249;
+@button-background-hover: #79aba6;
+@button-border: none;
+@button-padding: 4px 16px;
+@button-font-size: 14px;
+@button-font-weight: normal;
+
+.button {
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    user-select: none;
+
+    display: inline-block;
+    padding: @button-padding;
+    color: @button-color;
+    border: @button-border;
+    font-size: @button-font-size;
+    font-weight: @button-font-weight;
+    background: @button-background;
+    &-extra-big {
+        border-radius: 4px;
+        padding: 15px 22px;
+    }
+
+    &-big {
+        font-family: @font-family-second;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: uppercase;
+        padding: 19px 45px;
+        border-radius: 2px;
+        max-width: 188px;
+    }
+    &-small {
+        padding: 15px 25px;
+        font-family: @font-family-second;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        text-transform: uppercase;
+        border-radius: 2px;
+    }
+    &-extra-small {
+        padding: 10px 15px;
+        font-family: @font-family-second;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        text-transform: uppercase;
+        background-color: @button-background;
+        color: #fff;
+
+        border-radius: 2px;
+        &:hover {
+            background-color: red;
+            color: #fff;
+        }
+    }
+
+    &-aboutus {
+        color: #ffffff;
+        font-family: @font-family-second;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: uppercase;
+        padding: 19px 26px;
+        margin-top: 50px;
+    }
+    &:hover {
+        text-decoration: none;
+        background-color: @button-background-hover;
+      -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1
+    }
+    &:focus {
+        background-color: green;
+       
+    }
+    &:active,
+    &.is-active {
+        background-color: grey;
+    }
+}
+
+
+@-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px)
+    }
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px)
+    }
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px)
+    }
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px)
+    }
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px)
+    }
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px)
+    }
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px)
+    }
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px)
+    }
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px)
+    }
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px)
+    }
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+.hook-button() {
+    text-align: center;
+    vertical-align: center;
+}
+
+;

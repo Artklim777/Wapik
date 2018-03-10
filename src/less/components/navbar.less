@@ -1,0 +1,83 @@
+@navbar-breakpoint: 768px;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+    &-brand {
+        padding-right: 25px;
+        border-right: 1px solid #718889ff;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    &-phone {
+        font-family: @font-family-second;
+        padding-left: 25px;
+        border-left: 1px solid #718889ff;
+        @media screen and (max-width: 786px) {
+            display:none;
+        }
+    }
+.brend-holder {
+        display: flex;
+    }
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+    &-item {
+    	padding-left: 10px;
+        text-decoration: none;
+    }
+    &-link {
+        font-family: @font-family-second;
+        text-decoration: none;
+        display: block;
+        padding: 10px 15px;
+        color: #b3bfbfff;
+        
+        &:hover {
+        	padding: 10px 15px;
+            color: #fff;
+            background-color: #83a7a5ff;
+
+        }
+
+    }
+    .is-active {
+        padding: 10px 15px;
+        color: red;
+        border-radius: 2px;
+        background-color: #fff;
+        opacity: 0.3;
+        &:hover {
+            background-color: @global-secondary-color;
+            opacity: 1;
+        }
+    }
+    &-toggler {
+
+        @media all and (min-width: @navbar-breakpoint) {
+            display: none;
+        }
+    }
+    &-collapse {
+
+        @media all and (max-width: (@navbar-breakpoint - 1px)) {
+            display: none;
+        }
+    }
+    .color-grengrey{
+    	color: #0f5f5c;
+    }
+}
+.border-nav-bottom{
+    	border-bottom: 1px solid #718889ff;
+    }
